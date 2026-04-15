@@ -1,5 +1,5 @@
 [build]
-  command = "cargo install --locked --version ${MDBOOK_VERSION} mdbook && mdbook build"
+  command = "rustup default stable && cargo install --locked --version ${MDBOOK_VERSION} mdbook && mdbook build"
   publish = "book/html"
 
 [build.environment]
