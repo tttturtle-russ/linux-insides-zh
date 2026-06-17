@@ -1,9 +1,8 @@
 [build]
-  command = "cargo install --locked --version ${MDBOOK_VERSION} mdbook && mdbook build"
+  command = "cargo install --locked mdbook && mdbook build"
   publish = "book/html"
 
 [build.environment]
-  MDBOOK_VERSION = "0.4.36"
   MDBOOK_OUTPUT__HTML__SITE_URL = "/"
 
 [context.deploy-preview.environment]
